@@ -142,7 +142,7 @@ hr {
     padding: 2px;
   }
   .card-inner {
-    max-height: 526px;
+    max-height: 524px;
     padding: 0 18px 18px 18px;
   }
   .card-inner > div:first-child {
