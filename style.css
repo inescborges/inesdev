@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  background-color: #dcebeb;
+  color: black;
+}
+
+/* ===================== */
+/* MAIN CARD.            */
+/* ===================== */
+
+.card {
+  padding: 32px;
+  width: 98%;
+  position: relative;
+}
+
+.card-inner {
+  background-color: #dcebeb;
+  padding: 24px;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 0.7rem;
+
+  overflow: hidden;
+  max-height: 250px;
+}
+
+.card-inner.is-open {
+  max-height: 2000px; /* hack */
+}
+
+/* ===================== */
+/* BASE CONTENT  (HEADER)*/
+/* ===================== */
+
+.card-inner > div:first-child {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  margin-bottom: 12px;
+}
+
+hr {
+  margin: 12px 0;
+}
+
+.info__list {
+  display: flex;
+  gap: 48px;
+}
+
+/* ===================== */
+/* TABS                  */
+/* ===================== */
+
+.tabs {
+  position: absolute;
+  right: 16px;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tabs button {
+  height: 28px;
+  padding: 0 6px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: #dcebeb;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background: black;
+  color: white;
+}
+
+/* ===================== */
+/* EXPANDED CONTENT.     */
+/* ===================== */
+
+.card-expand {
+  margin-top: 24px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.card-inner.is-open .card-expand {
+  opacity: 1;
+}
+
+.content-inner {
+  border: 1px solid black;
+  padding: 24px;
+}
+
+/* ===================== */
+/* CONTACT LIST          */
+/* ===================== */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.contact-list li {
+  margin-bottom: 8px;
+}
+
+.contact-list a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+/* ===================== */
+/* RESPONSIVE            */
+/* ===================== */
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    padding: 2px;
+  }
+  .card-inner {
+    max-height: 504px;
+    padding: 0 18px 18px 18px;
+  }
+  .card-inner > div:first-child {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .info__list {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .tabs {
+    flex-direction: row;
+    top: 490px;
+  }
+
+  .content-inner {
+    margin: -10px -18px -18px -18px;
+    border: 0;
+    border-top: 1px solid black;
+  }
+}
+
+/* ===================== */
+/* BARTER APP CONCEPT    */
+/* ===================== */
+
+.barter-app {
+  --bg-main: #fff;
+  --bg-card: #f2f2f2;
+  --bg-soft: #eee;
+  --bg-inner: #fff;
+  --text-muted: #777;
+  --radius-lg: 32px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+}
+
+@font-face {
+  font-family: "Morris Roman";
+  src: url("assets/MorrisRoman-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.barter-app {
+  font-family: system-ui, sans-serif;
+  background: var(--bg-main);
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: var(--radius-lg);
+  max-width: 300px;
+}
+
+.device {
+  width: 330px;
+  padding: 16px;
+  background: #111;
+  border-radius: 32px;
+  margin-top: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.barter-app h1 {
+  font-family: "Morris Roman", serif;
+  font-size: 1.5rem;
+}
+.barter-app header > div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.barter-app .avatar {
+  width: 48px;
+  height: 48px;
+  background: #ddd;
+  border-radius: 50%;
+}
+
+/* Cards */
+.barter-app .card {
+  background: var(--bg-card);
+  padding: 12px;
+  border-radius: var(--radius-md);
+  margin-bottom: 16px;
+}
+
+.barter-app .inner-card {
+  background: var(--bg-inner);
+  padding: 12px;
+  border-radius: var(--radius-md);
+  margin-top: 8px;
+}
+
+/* Items */
+.barter-app .card__item {
+  background: var(--bg-inner);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  margin-top: 6px;
+}
+
+/* Columns */
+.barter-app .cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Match */
+.barter-app .match-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.barter-app .exchange {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Text */
+.barter-app .muted {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.barter-app button {
+  background: none;
+  border: none;
+  padding: 4px 8px;
+  font: inherit;
+  cursor: default;
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartão</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="layout">
+      <section class="card">
+        <div class="card-inner pixel-frame">
+          <div>
+            <div class="photo">
+              <pre id="ascii-kitty"></pre>
+            </div>
+
+            <div class="info">
+              <h3>Inês Borges</h3>
+
+              <hr />
+
+              <div class="info__list">
+                <div>
+                  <p><b>Location</b> · Lisboa, PT</p>
+                  <p><b>Role</b> • Web Developer</p>
+                  <p><b>Experience</b> • 8y+</p>
+                  <p><b>Tools</b> • Angular, React, R3F, Blender</p>
+                </div>
+                <div>
+                  <p><b>Focus</b> • Interactive & immersive web</p>
+                  <p><b>Passion</b> • Playful interfaces</p>
+                  <p><b>Approach</b> • Clean systems, small details</p>
+                  <p><b>Status</b> • Building</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- EXPANDED CONTENT -->
+          <div class="card-expand" id="card-expand"></div>
+        </div>
+
+        <!-- TABS -->
+        <div class="tabs">
+          <button data-tab="p1">01</button>
+          <button data-tab="p2">02</button>
+          <button data-tab="p3">03</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="assets/ascii-kitty.js"></script>
+  </body>
+</html>
