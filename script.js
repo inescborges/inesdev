@@ -8,7 +8,7 @@ const projects = {
       <h2>Interactive 3D Apartment</h2>
       <hr />
       <p>
-        This project started as a personal exploration inspired by buying my own apartment.         It came as an opportunity to finally put my hands on React Three Fiber and Blender.
+        This project started as a personal exploration inspired by buying my own apartment.         It came as an opportunity to finally put my hands on Three.js, R3F and Blender.
       </p>
       <p>
       </p>
@@ -18,7 +18,14 @@ const projects = {
       <p>
         The space mixes everyday domestic elements with playful and slightly uncanny interactions.
       </p>
-      <p>Stack: R3F + Blender</p>
+      <p>The project is available as a 
+          <a href="https://house.inesdev.space" target="_blank" rel="noopener noreferrer">
+            live interactive experience</a>, 
+          with the source code on 
+          <a href="https://github.com/inescborges/house-tour" target="_blank" rel="noopener noreferrer">
+            GitHub</a>.
+      </p>
+      <p>Stack: Three.js + R3F + Blender</p>
     </div>
   `,
 
