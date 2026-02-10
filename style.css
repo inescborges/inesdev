@@ -84,6 +84,10 @@ hr {
 
 .tabs button {
   height: 28px;
+  color: black;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
   padding: 0 6px;
   border: 1px solid black;
   border-radius: 6px;
@@ -138,7 +142,7 @@ hr {
     padding: 2px;
   }
   .card-inner {
-    max-height: 504px;
+    max-height: 526px;
     padding: 0 18px 18px 18px;
   }
   .card-inner > div:first-child {
