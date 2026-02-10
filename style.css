@@ -9,6 +9,12 @@ body {
   color: black;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
 /* ===================== */
 /* MAIN CARD.            */
 /* ===================== */
@@ -120,12 +126,6 @@ hr {
 
 .contact-list li {
   margin-bottom: 8px;
-}
-
-.contact-list a {
-  color: black;
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
 }
 
 /* ===================== */
