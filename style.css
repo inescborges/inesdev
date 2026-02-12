@@ -136,49 +136,6 @@ hr {
 }
 
 /* ===================== */
-/* RESPONSIVE            */
-/* ===================== */
-
-@media (max-width: 768px) {
-  .card {
-    width: 100%;
-    padding: 2px;
-  }
-  .card-inner {
-    max-height: 524px;
-    padding: 0 18px 18px 18px;
-  }
-  .card-inner > div:first-child {
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .info__list {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .tabs {
-    flex-direction: row;
-    top: 510px;
-  }
-
-  .content-inner {
-    margin: -10px -18px -18px -18px;
-    border: 0;
-    border-top: 1px solid black;
-  }
-
-  .device {
-    width: 100%;
-  }
-
-  .barter-app {
-    max-width: 100%;
-  }
-}
-
-/* ===================== */
 /* BARTER APP CONCEPT    */
 /* ===================== */
 
@@ -293,4 +250,47 @@ hr {
   padding: 4px 8px;
   font: inherit;
   cursor: default;
+}
+
+/* ===================== */
+/* RESPONSIVE            */
+/* ===================== */
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    padding: 2px;
+  }
+  .card-inner {
+    max-height: 524px;
+    padding: 0 18px 18px 18px;
+  }
+  .card-inner > div:first-child {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .info__list {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .tabs {
+    flex-direction: row;
+    top: 510px;
+  }
+
+  .content-inner {
+    margin: -10px -18px -18px -18px;
+    border: 0;
+    border-top: 1px solid black;
+  }
+
+  .device {
+    width: 100%;
+  }
+
+  .barter-app {
+    max-width: 100%;
+  }
 }
