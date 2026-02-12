@@ -72,6 +72,7 @@ let current = "rest";
 let isTyping = false;
 let typingTimeout = null;
 let typingMovesLeft = 0;
+let isBlinking = false;
 
 function startTypingBurst() {
   isTyping = true;
@@ -81,26 +82,34 @@ function startTypingBurst() {
 
 /* ---------- BLINK ---------- */
 function blink() {
+  if (isBlinking) return;
+
+  isBlinking = true;
   const prev = current;
 
   cat.textContent = states.blink;
 
   setTimeout(() => {
+    isBlinking = false;
     cat.textContent = states[prev];
-  }, 1000);
+  }, 200);
 }
 
 /* ---------- MAIN LOOP ---------- */
 function loop() {
+  if (isBlinking) {
+    setTimeout(loop, 50);
+    return;
+  }
   if (!isTyping) {
-    // REST → pensar
+    // REST
     if (Math.random() < 0.15) {
       startTypingBurst();
     } else {
       current = "rest";
     }
   } else {
-    // TYPING → alternate hands
+    // TYPING -> alternate hands
     current = current === "typing" ? "typing2" : "typing";
     typingMovesLeft--;
 
