@@ -52,7 +52,6 @@ a {
 .card-inner > div:first-child {
   display: flex;
   gap: 24px;
-  margin-bottom: 24px;
 }
 
 .photo {
@@ -109,12 +108,12 @@ hr {
 /* ===================== */
 
 .card-expand {
-  margin-top: 24px;
   opacity: 0;
   transition: opacity 0.2s ease;
 }
 
 .card-inner.is-open .card-expand {
+  margin-top: 24px;
   opacity: 1;
 }
 
