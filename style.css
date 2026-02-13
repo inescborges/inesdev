@@ -123,16 +123,25 @@ hr {
 }
 
 /* ===================== */
-/* CONTACT LIST          */
+/* 3D HOUSE TOUR.        */
 /* ===================== */
-.contact-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 16px;
+.project-layout {
+  display: flex;
+  gap: 32px;
+  align-items: center;
 }
 
-.contact-list li {
-  margin-bottom: 8px;
+.project-media,
+.project-text {
+  flex: 1;
+}
+
+.project-media video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid black;
+  border-radius: 8px;
 }
 
 /* ===================== */
@@ -175,7 +184,6 @@ hr {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-/* Header */
 .barter-app h1 {
   font-family: "Morris Roman", serif;
   font-size: 1.5rem;
@@ -194,7 +202,6 @@ hr {
   border-radius: 50%;
 }
 
-/* Cards */
 .barter-app .card {
   background: var(--bg-card);
   padding: 12px;
@@ -209,7 +216,6 @@ hr {
   margin-top: 8px;
 }
 
-/* Items */
 .barter-app .card__item {
   background: var(--bg-inner);
   padding: 4px 8px;
@@ -217,14 +223,12 @@ hr {
   margin-top: 6px;
 }
 
-/* Columns */
 .barter-app .cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
 
-/* Match */
 .barter-app .match-header {
   display: flex;
   justify-content: space-between;
@@ -238,7 +242,6 @@ hr {
   color: #555;
 }
 
-/* Text */
 .barter-app .muted {
   color: var(--text-muted);
   font-size: 0.85rem;
@@ -250,6 +253,19 @@ hr {
   padding: 4px 8px;
   font: inherit;
   cursor: default;
+}
+
+/* ===================== */
+/* CONTACT LIST          */
+/* ===================== */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.contact-list li {
+  margin-bottom: 8px;
 }
 
 /* ===================== */
@@ -284,6 +300,15 @@ hr {
     margin: -10px -18px -18px -18px;
     border: 0;
     border-top: 1px solid black;
+  }
+
+  .project-layout {
+    flex-direction: column;
+  }
+
+  .project-media,
+  .project-text {
+    width: 100%;
   }
 
   .device {

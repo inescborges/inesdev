@@ -7,26 +7,53 @@ const projects = {
     <div class="content-inner">
       <h2>Interactive 3D Apartment</h2>
       <hr />
-      <p>
-        This project started as a personal exploration inspired by buying my own apartment.         It came as an opportunity to finally put my hands on Three.js, R3F and Blender.
-      </p>
-      <p>
-      </p>
-      <p>
-        The focus was on gaining practical experience by building a real, navigable 3D space in the browser, exploring interaction, performance, and playful spatial design.
-      </p>
-      <p>
-        The space mixes everyday domestic elements with playful and slightly uncanny interactions.
-      </p>
-      <p>The project is available as a 
-          <a href="https://house.inesdev.space" target="_blank" rel="noopener noreferrer">
-            live interactive experience</a>, 
-          with the source code on 
-          <a href="https://github.com/inescborges/house-tour" target="_blank" rel="noopener noreferrer">
-            GitHub</a>.
-      </p>
-      <p>Stack: Three.js + R3F + Blender</p>
+
+      <div class="project-layout">
+        
+        <div class="project-media">
+          <video 
+            autoplay 
+            muted 
+            loop 
+            playsinline 
+            preload="auto"
+          >
+            <source src="assets/house-tour-demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="project-text">
+          <p>
+            This project started as a personal exploration inspired by buying my own apartment.
+            It came as an opportunity to finally put my hands on Three.js, R3F and Blender.
+          </p>
+
+          <p>
+            The focus was on gaining practical experience by building a real, navigable 3D space in the browser,
+            exploring interaction, performance, and playful spatial design.
+          </p>
+
+          <p>
+            The space mixes everyday domestic elements with playful and slightly uncanny interactions.
+          </p>
+
+          <p>
+            The project is available as a 
+            <a href="https://house.inesdev.space" target="_blank" rel="noopener noreferrer">
+              live interactive experience
+            </a>, 
+            with the source code on 
+            <a href="https://github.com/inescborges/house-tour" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>.
+          </p>
+          <p>Stack: Three.js + R3F + Blender</p>
+        </div>
+
+      </div>
     </div>
+
   `,
 
   p2: async () => {
