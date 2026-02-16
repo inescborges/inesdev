@@ -5,7 +5,7 @@
 
 body {
   font-family: "JetBrains Mono", monospace;
-  background-color: #dcebeb;
+  background-color: #d3d3d3;
   color: black;
 }
 
@@ -33,7 +33,7 @@ a {
 }
 
 .card-inner {
-  background-color: #dcebeb;
+  background-color: #d3d3d3;
   padding: 24px;
   border: 1px solid black;
   border-radius: 8px;
@@ -94,7 +94,7 @@ hr {
   padding: 0 6px;
   border: 1px solid black;
   border-radius: 6px;
-  background-color: #dcebeb;
+  background-color: #d3d3d3;
   cursor: pointer;
 }
 
@@ -142,6 +142,48 @@ hr {
   display: block;
   border: 1px solid black;
   border-radius: 8px;
+}
+
+.video-wrapper {
+  position: relative;
+}
+
+.video-wrapper video {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.video-wrapper.is-ready video {
+  opacity: 1;
+}
+
+.video-loader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: opacity 0.2s ease;
+}
+
+.video-wrapper.is-ready .video-loader {
+  opacity: 0;
+}
+
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-top: 3px solid black;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* ===================== */

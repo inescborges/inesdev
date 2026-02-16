@@ -11,16 +11,25 @@ const projects = {
       <div class="project-layout">
         
         <div class="project-media">
-          <video 
-            autoplay 
-            muted 
-            loop 
-            playsinline 
-            preload="auto"
-          >
-            <source src="assets/house-tour-demo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <div class="video-wrapper">
+    
+            <div class="video-loader">
+              <div class="spinner"></div>
+            </div>
+
+            <video 
+              id="house-video"
+              autoplay 
+              muted 
+              loop 
+              playsinline 
+              preload="auto"
+            >
+              <source src="assets/house-tour-demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+          </div>
         </div>
 
         <div class="project-text">
@@ -133,5 +142,18 @@ tabs.forEach((tab) => {
     }
 
     card.classList.add("is-open");
+
+    const video = document.getElementById("house-video");
+    if (video) {
+      const wrapper = video.closest(".video-wrapper");
+
+      video.addEventListener(
+        "canplaythrough",
+        () => {
+          wrapper.classList.add("is-ready");
+        },
+        { once: true },
+      );
+    }
   });
 });
