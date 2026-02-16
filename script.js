@@ -50,12 +50,10 @@ const projects = {
           <p>
             The project is available as a 
             <a href="https://house.inesdev.space" target="_blank" rel="noopener noreferrer">
-              live interactive experience
-            </a>, 
+              live interactive experience</a>, 
             with the source code on 
             <a href="https://github.com/inescborges/house-tour" target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>.
+              GitHub</a>.
           </p>
           <p>Stack: Three.js + R3F + Blender</p>
         </div>
