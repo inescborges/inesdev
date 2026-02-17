@@ -91,7 +91,7 @@ const projects = {
       <h2>About me</h2>
       <hr />
       <p>Hi Hello! Happy to have you around here.</p>
-      <p>My name is Inês, a Lisbon-based web developer passionate about the space where technology meets design. I care about thoughtful interfaces, clean systems, and products that feel considered.</p>
+      <p>My name is Inês, a Lisbon-based Frontend Engineer passionate about the space where technology meets design. I care about thoughtful interfaces, clean systems, and products that feel considered.</p>
       <p>I also love creating silly little things that serve no purpose other than lifting the mood of everyday life.</p>
       <ul class="contact-list">
       <li>
